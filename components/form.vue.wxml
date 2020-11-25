@@ -1,0 +1,9 @@
+<template name="0ebb8c98"><view class="_div data-v-b8028aba form"><image class="_image data-v-b8028aba head-img" src="../../static/images/green-flower.png"></image> <view class="_p data-v-b8028aba title"><label class="_span data-v-b8028aba">* </label>姓名
+    </view> <input type="text" placeholder="怎么称呼您呢？" value="{{name}}" bindinput="handleProxy" maxlength="6" data-eventid="{{'0'}}" data-comkey="{{$k}}" class="_input data-v-b8028aba" /> <view class="_p data-v-b8028aba title"><label class="_span data-v-b8028aba">* </label>电话
+    </view> <input type="number" placeholder="请填写有效的手机号码" value="{{phone}}" bindinput="handleProxy" maxlength="11" data-eventid="{{'1'}}" data-comkey="{{$k}}" class="_input data-v-b8028aba" /> <view class="_p data-v-b8028aba title">
+        几人出席
+    </view> <radio-group bindchange="handleProxy" class="_radio-group data-v-b8028aba group" data-eventid="{{'2'}}" data-comkey="{{$k}}"><label class="_label data-v-b8028aba radio" wx:key="index" key="{{index}}" wx:for="{{list}}" wx:for-index="index" wx:for-item="item"><radio value="{{item.name}}" checked="{{item.checked}}" class="_radio data-v-b8028aba" />
+            {{item.value}}
+        </label></radio-group> <view class="_p data-v-b8028aba title">
+        备注
+    </view> <textarea focus="true" maxlength="80" class="_textarea data-v-b8028aba desc" placeholder="请填写您的备注需求" name="textarea" placeholder-style="color:#ccc;" value="{{desc}}" bindinput="handleProxy" data-eventid="{{'3'}}" data-comkey="{{$k}}" /> <view class="_div data-v-b8028aba btn"><button class="_button data-v-b8028aba left" bindtap="handleProxy" data-eventid="{{'4'}}" data-comkey="{{$k}}">确认提交</button> <button class="_button data-v-b8028aba right" bindtap="handleProxy" data-eventid="{{'5'}}" data-comkey="{{$k}}">取消</button></view></view></template>
